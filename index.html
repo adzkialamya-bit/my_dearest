@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4eadb">
+  <meta name="description" content="A little journal written by Lamya for Hamzah — a story about life, distance, dreams, and choosing honesty.">
+  <title>The Chapters of My Heart — For Hamzah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="The Chapters of My Heart home">
+      <span class="brand-mark">♡</span>
+      <span>the chapters of my heart</span>
+    </a>
+    <nav class="top-nav" aria-label="Main navigation">
+      <a href="#chapters">The chapters</a>
+      <a href="#little-things">Little things</a>
+    </nav>
+    <button class="music-toggle" id="musicToggle" aria-pressed="false" title="Play or pause the instrumental">
+      <span class="music-icon">♫</span><span id="musicLabel">Play music</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star">✳</span> A DIGITAL LOVE JOURNAL · 2026</p>
+        <h1>The Chapters<br><em>of My Heart</em></h1>
+        <p class="hero-subtitle">A story about me, the life I lived, and the person who unexpectedly became part of it.</p>
+        <div class="hero-to">Written with love, <span>for Hamzah.</span></div>
+        <a class="primary-button" href="#chapters">Open the journal <span>↗</span></a>
+        <p class="hero-footnote">Five chapters. A thousand little feelings. One very personal story.</p>
+      </div>
+      <div class="hero-art">
+        <div class="sun-wash"></div>
+        <div class="hero-photo photo-tilt">
+          <img src="assets/lamya-garden.png" alt="Lamya smiling in a garden">
+          <span class="photo-caption">a little piece of me</span>
+        </div>
+        <div class="floating-note note-top">for you, always ♡</div>
+        <div class="floating-note note-bottom">Indonesia <span>↝</span> London</div>
+        <span class="hero-flower">✿</span>
+      </div>
+      <div class="scroll-cue">SCROLL TO BEGIN <span>↓</span></div>
+    </section>
+
+    <section class="intro-strip">
+      <p>“Some stories are too precious to be told in one conversation.<br>So, I wrote mine for you.”</p>
+      <span>— Lamya</span>
+    </section>
+
+    <section class="section chapters-section" id="chapters">
+      <div class="section-heading">
+        <p class="eyebrow">THE JOURNAL</p>
+        <h2>Five little chapters, <em>one big story.</em></h2>
+        <p>Take your time. You can open them in any order, but I hope you'll read them as a journey.</p>
+      </div>
+      <div class="chapter-grid">
+        <button class="chapter-card" data-chapter="1">
+          <span class="chapter-number">01</span>
+          <span class="chapter-image"><img src="assets/childhood-01.png" alt="Lamya as a little girl"></span>
+          <span class="chapter-card-title">The Girl Behind This Journal</span>
+          <span class="chapter-card-desc">Before you knew me, there was a little girl with her own universe.</span>
+          <span class="chapter-open">Open chapter ↗</span>
+        </button>
+        <button class="chapter-card" data-chapter="2">
+          <span class="chapter-number">02</span>
+          <span class="chapter-image"><img src="assets/lamya-and-sibling-01.png" alt="Lamya with a younger family member"></span>
+          <span class="chapter-card-title">The Girl Who Learned to Stand Alone</span>
+          <span class="chapter-card-desc">The losses, lessons, and little victories that shaped me.</span>
+          <span class="chapter-open">Open chapter ↗</span>
+        </button>
+        <button class="chapter-card" data-chapter="3">
+          <span class="chapter-number">03</span>
+          <span class="chapter-image"><img src="assets/hamza-travelling.png" alt="Hamzah looking out over a scenic view"></span>
+          <span class="chapter-card-title">The Light Came From London</span>
+          <span class="chapter-card-desc">A little prayer, an unexpected hello, and a new beginning.</span>
+          <span class="chapter-open">Open chapter ↗</span>
+        </button>
+        <button class="chapter-card" data-chapter="4">
+          <span class="chapter-number">04</span>
+          <span class="chapter-image letter-card-art"><span>✉</span><small>a letter for your difficult days</small></span>
+          <span class="chapter-card-title">Read This When You're Tired</span>
+          <span class="chapter-card-desc">A letter to return to whenever the world feels too heavy.</span>
+          <span class="chapter-open">Open letter ↗</span>
+        </button>
+        <button class="chapter-card final-card" data-chapter="5">
+          <span class="chapter-number">05</span>
+          <span class="chapter-image promise-card-art"><span>♡</span><small>until distance becomes home</small></span>
+          <span class="chapter-card-title">Until Distance Becomes Home</span>
+          <span class="chapter-card-desc">The promises I hope we'll keep, wherever life takes us.</span>
+          <span class="chapter-open">Read our promise ↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="little-things section" id="little-things">
+      <div class="section-heading">
+        <p class="eyebrow">A SMALL CORNER OF THIS JOURNAL</p>
+        <h2>For the days <em>you miss me.</em></h2>
+        <p>Tap the little envelope. I might have left a note for you.</p>
+      </div>
+      <div class="miss-card">
+        <div class="envelope" id="missEnvelope" role="button" tabindex="0" aria-label="Open a little message from Lamya">
+          <div class="envelope-back"></div><div class="envelope-letter">♡</div><div class="envelope-flap"></div>
+        </div>
+        <p class="envelope-hint">A little note, from me to you</p>
+        <p class="random-note" id="randomNote" aria-live="polite">There's a message waiting inside.</p>
+        <button class="text-button" id="openNote">Open your note <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="closing section">
+      <div class="closing-ornament">✿</div>
+      <p class="eyebrow">FROM INDONESIA, WITH LOVE TO LONDON</p>
+      <h2>“I don't want us to simply find a way to close the distance. I want us to build a life worth travelling towards.”</h2>
+      <p class="signature">Your girl, <span>Lamya</span></p>
+      <a class="back-top" href="#home">Back to the beginning ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Made with love, one page at a time.</span>
+    <span>Lamya ♡ Hamzah · 24 October 2026</span>
+  </footer>
+
+  <div class="modal" id="chapterModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-paper" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close chapter">×</button>
+      <div class="modal-topline"><span id="modalKicker">CHAPTER 01</span><span>♡</span></div>
+      <div id="modalContent"></div>
+      <div class="modal-footer">
+        <button class="text-button" id="prevChapter">← Previous</button>
+        <span id="modalPage">01 / 05</span>
+        <button class="text-button" id="nextChapter">Next →</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
